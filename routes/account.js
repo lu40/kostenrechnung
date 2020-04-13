@@ -8,7 +8,7 @@ router.get('/new', (req, res) => {
 })
 
 //Create New Account Item
-router.post('/', (req, res) => {
+router.post('/account', (req, res) => {
     const account = new Account({
         amount: req.body.amount
     })
